@@ -1,1 +1,172 @@
-# crmhomes-site
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRM Homes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4fcff;
+      color: #222;
+    }
+    header {
+      background-color: #2980b9;
+      color: #fff;
+      padding: 20px 0;
+    }
+    .header-container {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      align-items: center;
+      padding: 0 40px;
+    }
+    .logo {
+      grid-column: 1 / 2;
+    }
+    .headline {
+      grid-column: 2 / 10;
+    }
+    .logo img {
+      height: 180px;
+    }
+    nav {
+      background: #3498db;
+      padding: 12px 0;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1em;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+      padding: 100px 20px;
+      text-align: center;
+      color: white;
+    }
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+    }
+    .hero p {
+      font-size: 1.3em;
+      color: #f0f0f0;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+    .cta-button {
+      margin-top: 25px;
+      padding: 14px 28px;
+      font-size: 1.1em;
+      background-color: #ffffff;
+      color: #2980b9;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .cta-button:hover {
+      background-color: #d6eaf8;
+    }
+    #about {
+      padding: 60px 20px;
+      background-color: #ffffff;
+      text-align: center;
+    }
+    #about h2 {
+      font-size: 2.5em;
+      color: #2980b9;
+      margin-bottom: 20px;
+    }
+    #about p {
+      max-width: 800px;
+      margin: 20px auto;
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+    #get-started {
+      padding: 80px 20px;
+      text-align: center;
+      background-color: #ffffff;
+    }
+    #get-started h2 {
+      font-size: 2.2em;
+      color: #2980b9;
+      margin-bottom: 30px;
+    }
+    #get-started p {
+      font-size: 1.2em;
+      margin-bottom: 40px;
+    }
+    #get-started button {
+      margin: 0 20px;
+      padding: 16px 28px;
+      font-size: 1.1em;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    #get-started .sell-btn {
+      background-color: #27ae60;
+    }
+    #get-started .buy-btn {
+      background-color: #2980b9;
+    }
+    footer {
+      background: #263238;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="logo.png" alt="CRM Homes Logo">
+      </div>
+      <div class="headline">
+        <h1>CRM Homes</h1>
+        <p>Flexible Real Estate Solutions for Buyers & Sellers in Birmingham</p>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#buyers">Buyers</a>
+    <a href="#sellers">Sellers</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Need to Sell Fast? Looking for Your Next Investment?</h1>
+    <p>We connect property owners with serious investors — fast, fair, and flexible.</p>
+    <button class="cta-button" onclick="document.getElementById('get-started').scrollIntoView({behavior: 'smooth'});">Get Started</button>
+  </section>
+
+  <section id="get-started">
+    <h2>Let’s Get Started</h2>
+    <p>Tell us a little more so we can help you faster.</p>
+    <button class="sell-btn" onclick="window.location.href='sell.html'">I'm Looking to Sell</button>
+    <button class="buy-btn" onclick="window.location.href='buy.html'">I'm Looking to Buy</button>
+  </section>
+
+  <section id="about">
+    <h2>About CRM Homes</h2>
+    <p>Hi, I'm Christopher Merritt, the founder of CRM Homes. I created this company to help connect people with solutions that matter — whether that's selling a home quickly and easily or finding a sound investment opportunity in real estate markets across the country.</p>
+    <p>I bring a background in business, analytics, and finance to the table and am excited to use those skills to bring clarity and structure to each transaction. I believe real estate offers an incredible opportunity to find and create value in a way that’s meaningful and lasting.</p>
+    <p>CRM Homes is built on the principles of transparency, fairness, and integrity. I work with homeowners — especially those in distressed situations — to help them explore creative options that meet their needs, while also offering strong returns to real estate investors seeking high-quality deals.</p>
