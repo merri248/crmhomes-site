@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sell Your Property | CRM Homes</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
@@ -10,110 +9,71 @@
       font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4fcff;
-      color: #222;
+      background: #f0f9ff;
     }
     header {
       background-color: #2980b9;
-      color: #fff;
-      padding: 20px 0;
+      padding: 20px;
+      color: white;
     }
     .header-container {
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
+      display: flex;
       align-items: center;
-      padding: 0 40px;
     }
-    .logo {
-      grid-column: 1 / 2;
-    }
-    .headline {
-      grid-column: 2 / 10;
-    }
-    .logo img {
-      height: 180px;
+    .header-container img {
+      height: 80px;
+      margin-right: 20px;
     }
     nav {
       background: #3498db;
-      padding: 12px 0;
+      padding: 10px;
       text-align: center;
     }
     nav a {
       color: white;
       margin: 0 20px;
       text-decoration: none;
-      font-weight: 600;
-      font-size: 1.1em;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .hero {
-      background: url('https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
-      padding: 80px 20px;
-      text-align: center;
-      color: white;
-    }
-    .hero h1 {
-      font-size: 2.8em;
-      margin-bottom: 10px;
-      text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
-    }
-    .hero p {
-      font-size: 1.2em;
-      color: #f0f0f0;
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+      font-weight: bold;
     }
     .form-container {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
+      max-width: 700px;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    footer {
-      background: #263238;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
+    iframe {
+      width: 100%;
+      height: 650px;
+      border: none;
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="header-container">
-      <div class="logo">
-        <img src="logo.png" alt="CRM Homes Logo">
-      </div>
-      <div class="headline">
-        <h1>CRM Homes</h1>
-        <p>Flexible Real Estate Solutions for Buyers & Sellers in Birmingham</p>
-      </div>
+
+<header>
+  <div class="header-container">
+    <img src="logo.png" alt="CRM Homes Logo">
+    <div>
+      <h1>CRM Homes</h1>
+      <p>Helping Sellers Move Forward — Quickly, Fairly, and Professionally</p>
     </div>
-  </header>
-
-  <nav>
-    <a href="index.html#buyers">Buyers</a>
-    <a href="index.html#sellers">Sellers</a>
-    <a href="index.html#about">About</a>
-    <a href="index.html#contact">Contact</a>
-  </nav>
-
-  <section class="hero">
-    <h1>Sell Your Property</h1>
-    <p>Fill out the short form below and we’ll be in touch right away.</p>
-  </section>
-
-  <div class="form-container">
-    <!-- Paste your Typeform embed code below -->
-    <iframe src="https://yourform.typeform.com/to/xyz123"
-            style="width: 100%; height: 600px;"
-            frameborder="0"
-            allow="camera; microphone; autoplay; encrypted-media;"
-            allowfullscreen></iframe>
   </div>
+</header>
 
-  <footer>
-    <p>&copy; 2025 CRM Homes. All rights reserved.</p>
-  </footer>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="buy.html">Buy</a>
+  <a href="sell.html">Sell</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="form-container">
+  <h2>Tell Us About Your Property</h2>
+  <p>Please fill out the form below and we’ll be in touch shortly.</p>
+  <iframe src="YOUR_TYPEFORM_EMBED_URL_HERE"></iframe>
+</div>
+
 </body>
 </html>
